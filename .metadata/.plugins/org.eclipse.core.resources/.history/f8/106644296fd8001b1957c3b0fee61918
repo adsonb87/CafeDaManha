@@ -1,0 +1,8 @@
+package br.cafedamanha.funcionario;
+
+public class Funcionario {
+	private Integer idUsuario;
+	private String nome;
+	private String cpf;
+	
+}

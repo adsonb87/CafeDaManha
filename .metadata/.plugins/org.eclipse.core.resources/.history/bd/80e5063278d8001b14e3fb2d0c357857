@@ -1,0 +1,5 @@
+package br.cafedamanha.funcionario;
+
+public interface IRepositorioFuncionario {
+
+}

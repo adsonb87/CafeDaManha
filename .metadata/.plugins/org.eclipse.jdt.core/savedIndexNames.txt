@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\adson\OneDrive\Documentos\Desenvolvimento\Programas\Novos\CafeDaManha\.metadata\.plugins\org.eclipse.jdt.core
+26493171.index
+2675734963.index

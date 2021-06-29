@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.cafedamanha.funcionario.Funcionario"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.cafedamanha.opcao.IRepositorioOpcao"/>
+    <fullyQualifiedTypeName name="br.cafedamanha.opcao.ControladorOpcao"/>
+    <fullyQualifiedTypeName name="br.cafedamanha.opcao.RepositorioOpcaoArray"/>
+    <fullyQualifiedTypeName name="br.cafedamanha.opcao.Opcao"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,16 @@
+package br.cafedamanha.funcionario;
+
+
+import java.util.ArrayList;
+
+import br.cafedamanha.opcao.Opcao;
+
+
+public class Funcionario {
+	private Integer idUsuario;
+	private String nome;
+	private String cpf;
+	private ArrayList<Opcao> listaOpcoes;
+	
+	
+}
