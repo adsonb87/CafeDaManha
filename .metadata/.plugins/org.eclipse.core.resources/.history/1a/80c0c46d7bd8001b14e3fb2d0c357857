@@ -11,41 +11,25 @@ public class RepositorioFuncionarioArray implements IRepositorioFuncionario {
 	
 	@Override
 	public void cadastrar(Funcionario funcionario) {
-		if(!existe(funcionario.getIdFuncionario())) {
-			listaFuncionario.add(funcionario);
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void atualizar(Funcionario funcionario) {
-		if(existe(funcionario.getIdFuncionario())){
-			for(int i=0; i<listaFuncionario.size(); i++) {
-				if(listaFuncionario.get(i).getIdFuncionario() == funcionario.getIdFuncionario()) {
-					listaFuncionario.set(i, funcionario);
-				}
-			}
-		}
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Funcionario procurar(Integer id) {
-		for(int i=0; i<listaFuncionario.size(); i++) {
-			if(listaFuncionario.get(i).getIdFuncionario() == id) {
-				return listaFuncionario.get(i);
-			}
-		}
+		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean remover(Integer id) {
-		if(existe(id)) {
-			Funcionario funcaionario = procurar(id);
-			listaFuncionario.remove(funcaionario);
-			return true;
-		}
+		// TODO Auto-generated method stub
 		return false;
 	}
 
