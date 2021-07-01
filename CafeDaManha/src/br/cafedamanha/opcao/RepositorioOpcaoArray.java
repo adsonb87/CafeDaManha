@@ -71,9 +71,10 @@ public class RepositorioOpcaoArray implements IRepositorioOpcao{
 	public ArrayList<Opcao> listarPorFuncionario(Integer idFuncionario) {
 		ArrayList<Opcao> listaPorFuncionario = new ArrayList<Opcao>();
 		for(int i=0; i<listaOpcao.size();i++) {
-			if(idFuncionario == null) {
+			if(idFuncionario==null) {
 				return null;
-			}else if(listaOpcao.get(i).getFuncionario().getIdFuncionario() == idFuncionario) {
+			}
+			else if(listaOpcao.get(i).getFuncionario().getIdFuncionario() == idFuncionario) {
 				listaPorFuncionario.add(listaOpcao.get(i));
 			}
 		}

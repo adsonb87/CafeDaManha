@@ -43,6 +43,6 @@ public class Opcao {
 	
 	@Override
 	public String toString() {
-		return "Opcao [idOpcao: " +idOpcao+ ", Opcao: " +opcao+ "]";
+		return "Opcao [idOpcao: " +idOpcao+ ", Opcao: " +opcao+ ", Funcionario: "+funcionario.getNome()+"]";
 	}
 }
