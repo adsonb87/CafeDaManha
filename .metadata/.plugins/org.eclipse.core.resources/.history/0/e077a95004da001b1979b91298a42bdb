@@ -27,40 +27,40 @@ public class Fachada {
 	}
 	
 	//Funcionario
-	public void cadastrarFuncionario (Funcionario funcionario) {
+	public void cadastrar (Funcionario funcionario) {
 		controladorFuncionario.cadastrar(funcionario);
 	}
-	public void atualizarFuncionario (Funcionario funcionario) {
+	public void atualizar (Funcionario funcionario) {
 		controladorFuncionario.atualizar(funcionario);
 	}
-	public Funcionario procurarFuncionario (Integer id) {
+	public Funcionario procurar (Integer id) {
 		return controladorFuncionario.procurar(id);
 	}
-	public boolean removerFuncionario (Integer id) {
+	public boolean remover (Integer id) {
 		return controladorFuncionario.remover(id);
 	}
-	public ArrayList<Funcionario> listarFuncionario (){
+	public ArrayList<Funcionario> listar (){
 		return controladorFuncionario.listar();
 	}
 	
 	//Opcao
-	public void cadastrarOpcao (Opcao opcao) {
+	public void cadastrar (Opcao opcao) {
 		controladorOpcao.cadastrar(opcao);
 	}
-	public void atualizarOpcao (Opcao opcao) {
+	public void atualizar (Opcao opcao) {
 		controladorOpcao.atualizar(opcao);
 	}
-	public Opcao procurarOpcao (Integer id) {
+	public Opcao procurar (Integer id) {
 		return controladorOpcao.procurar(id);
 	}
-	public boolean removerOpcao (Integer id) {
+	public boolean remover (Integer id) {
 		return controladorOpcao.remover(id);
 	}
-	public ArrayList<Opcao> listarOpcao (){
+	public ArrayList<Opcao> listar (){
 		return controladorOpcao.listar();
 	}
 	
-	public ArrayList<Opcao> listarPorFuncionarioOpcao (Integer idFuncionario){
+	public ArrayList<Opcao> listarPorFuncionario (Integer idFuncionario){
 		return controladorOpcao.listarPorFuncionario(idFuncionario);
 	}
 	
