@@ -9,5 +9,4 @@ public interface IRepositorioOpcao {
 	public boolean remover (Integer id);
 	public boolean existe (Integer id);
 	public ArrayList<Opcao> listar ();
-	public ArrayList<Opcao> listarPorFuncionario (Integer idFuncionario);
 }
