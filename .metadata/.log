@@ -302,3 +302,6 @@ org.eclipse.swt.SWTException: Invalid thread access
 	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.internalSetProperty(DataModelImpl.java:183)
 	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.setProperty(DataModelImpl.java:172)
 	at org.eclipse.wst.web.ui.internal.wizards.DataModelFacetCreationWizardPage$5.run(DataModelFacetCreationWizardPage.java:467)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-07-01 21:20:51.899
+!MESSAGE Several ports (8005, 8080) required by Tomcat v10.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
