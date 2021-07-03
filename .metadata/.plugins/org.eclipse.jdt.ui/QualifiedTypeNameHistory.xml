@@ -8,12 +8,14 @@
     <fullyQualifiedTypeName name="br.cafedamanha.opcao.ControladorOpcao"/>
     <fullyQualifiedTypeName name="br.cafedamanha.funcionario.Funcionario"/>
     <fullyQualifiedTypeName name="br.cafedamanha.opcao.Opcao"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.javaweb.jdbc.Conexao"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="com.sun.jdi.connect.spi.Connection"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.com.javaweb.entidades.Usuario"/>
     <fullyQualifiedTypeName name="br.com.javaweb.jdbc.UsuarioDAO"/>
 </qualifiedTypeNameHistroy>
