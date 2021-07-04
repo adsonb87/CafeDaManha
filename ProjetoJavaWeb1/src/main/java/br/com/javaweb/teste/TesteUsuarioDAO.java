@@ -10,7 +10,7 @@ public class TesteUsuarioDAO {
 
 	public static void main(String[] args) {
 		
-		testeBuscarPorId();
+		testeBuscarPorNome();
 
 	}
 
@@ -63,6 +63,21 @@ public class TesteUsuarioDAO {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		
 		usuario = usuarioDAO.buscarPorIdUsuario(id);
+		
+		System.out.println("ID: " + usuario.getId() + " Nome: " + usuario.getNome() 
+							+ " Login: " + usuario.getLogin() + " Senha: " + usuario.getSenha());
+		
+	}
+	
+	private static void testeBuscarPorNome () {
+		
+		String nome = "Juca da Silva";
+		
+		Usuario usuario = new Usuario();
+		
+		UsuarioDAO usuarioDAO = new UsuarioDAO();
+		
+		usuario = usuarioDAO.buscarPorNomeUsuario(nome);
 		
 		System.out.println("ID: " + usuario.getId() + " Nome: " + usuario.getNome() 
 							+ " Login: " + usuario.getLogin() + " Senha: " + usuario.getSenha());

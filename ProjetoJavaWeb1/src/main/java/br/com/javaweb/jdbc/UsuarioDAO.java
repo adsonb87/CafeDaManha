@@ -155,4 +155,40 @@ public class UsuarioDAO {
 			return usuario;
 	}
 	
+	public Usuario buscarPorNomeUsuario (String nome) {
+		//SQL 
+		String sql = "SELECT * FROM USUARIO WHERE nome = ?";	
+
+		Usuario usuario = null;
+		
+		//Constroi prStm com o SQL
+		try {
+			PreparedStatement prStm = con.prepareStatement(sql);
+			
+			prStm.setString(1, nome);
+				
+			//ResultSet recebe a query retornada da pesquisa do banco
+			ResultSet rs = prStm.executeQuery();
+			
+			if(rs.next()) {
+				usuario = new Usuario();
+				usuario.setId(rs.getInt(1));
+				usuario.setNome(rs.getString(2));
+				usuario.setLogin(rs.getString(3));
+				usuario.setSenha(rs.getString(4));
+			}
+			
+			rs.close();
+			prStm.close();
+					
+			System.out.println("Localizado com sucesso");
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+				
+			return usuario;
+	}
+	
+	
 }

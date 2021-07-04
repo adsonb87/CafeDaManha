@@ -8,8 +8,8 @@ INDEX VERSION 1.131+C:\Users\adson\OneDrive\Documentos\Desenvolvimento\Programas
 2721487365.index
 2823564320.index
 138089760.index
-710687440.index
 1408369194.index
+710687440.index
 1138004697.index
 4140349976.index
 804897581.index
@@ -18,14 +18,14 @@ INDEX VERSION 1.131+C:\Users\adson\OneDrive\Documentos\Desenvolvimento\Programas
 3847162911.index
 2476153649.index
 2242634039.index
-4723768.index
 2762874668.index
+4723768.index
 2954502959.index
 2904164788.index
 1997452205.index
 1997003438.index
-851147614.index
 3261187497.index
+851147614.index
 3437763033.index
 1043311455.index
 3167271375.index
