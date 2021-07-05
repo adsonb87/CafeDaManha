@@ -190,5 +190,72 @@ public class UsuarioDAO {
 			return usuario;
 	}
 	
+	public Usuario autenticarUsuario (Usuario usuario) {
+		//SQL 
+		String sql = "SELECT * FROM USUARIO WHERE login = ? and senha = ?";	
+
+		Usuario usuarioAutenticado = null;
+		
+		//Constroi prStm com o SQL
+		try {
+			PreparedStatement prStm = con.prepareStatement(sql);
+			
+			prStm.setString(1, usuario.getLogin());
+			prStm.setString(2, usuario.getSenha());
+				
+			//ResultSet recebe a query retornada da pesquisa do banco
+			ResultSet rs = prStm.executeQuery();
+			
+			if(rs.next()) {
+				usuarioAutenticado = new Usuario();
+				usuarioAutenticado.setId(rs.getInt(1));
+				usuarioAutenticado.setNome(rs.getString(2));
+				usuarioAutenticado.setLogin(rs.getString(3));
+				usuarioAutenticado.setSenha(rs.getString(4));
+			}
+			
+			rs.close();
+			prStm.close();
+					
+			System.out.println("Usuario autenticado com sucesso");
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+				
+			return usuarioAutenticado;
+	}
+	
+	public boolean existeUsuario (Usuario usuario) {
+		//SQL 
+		String sql = "SELECT * FROM USUARIO WHERE login = ? and senha = ?";	
+
+		boolean existe = false;
+		
+		//Constroi prStm com o SQL
+		try {
+			PreparedStatement prStm = con.prepareStatement(sql);
+			
+			prStm.setString(1, usuario.getLogin());
+			prStm.setString(2, usuario.getSenha());
+				
+			//ResultSet recebe a query retornada da pesquisa do banco
+			ResultSet rs = prStm.executeQuery();
+			
+			existe = rs.next();
+				
+			rs.close();
+			prStm.close();
+					
+			
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
+				
+			return existe;
+	}
+	
+	
 	
 }
