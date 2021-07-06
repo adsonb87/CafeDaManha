@@ -1,5 +1,0 @@
-package br.cafedamanha.opcao;
-
-public interface IRepositorioOpcao {
-
-}

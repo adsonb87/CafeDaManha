@@ -6,17 +6,24 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Funcionario"/>
+		<item key="selection" value="Server port"/>
 		<list key="findhistory">
+			<item value="Server port"/>
+			<item value="Server"/>
+			<item value="server port"/>
+			<item value="Connector port"/>
+			<item value="connector port"/>
+			<item value="connector"/>
 			<item value="Opcao"/>
 			<item value="&#x09;public"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="Funcionario"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="505"/>
+		<item key="DIALOG_X_ORIGIN" value="703"/>
 		<item key="DIALOG_Y_ORIGIN" value="263"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
