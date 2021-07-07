@@ -105,7 +105,7 @@ private static void testeExiste() {
 		
 		Usuario user = new Usuario();
 		user.setLogin("Jpedro");
-		user.setSenha("d9b1d7db4cd6e70935368a1efb10e377");
+		user.setSenha("123");
 						
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		
