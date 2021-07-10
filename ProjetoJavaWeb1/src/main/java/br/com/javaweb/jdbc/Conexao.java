@@ -11,7 +11,7 @@ public class Conexao {
 		Connection con = null;
 		
 		try {
-			Class.forName("org.postresql.Driver");
+			Class.forName("org.postgresql.Driver");
 			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ProjetoJavaWeb1","postgres","admin");
 			System.out.println("Conectado com sucesso");
 		} catch (SQLException e) {

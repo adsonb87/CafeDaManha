@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Server port"/>
+		<item key="selection" value="&lt;/div&gt;"/>
 		<list key="findhistory">
+			<item value="&lt;/div&gt;"/>
 			<item value="Server port"/>
 			<item value="Server"/>
 			<item value="server port"/>
@@ -15,7 +16,6 @@
 			<item value="connector port"/>
 			<item value="connector"/>
 			<item value="Opcao"/>
-			<item value="&#x09;public"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

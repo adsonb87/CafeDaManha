@@ -60,6 +60,14 @@ public class UsuarioDAO {
 		}
 	}
 	
+	public void salvarUsuario(Usuario usuario) {
+		if(usuario.getId()!=null && usuario.getId()!=0) {
+			alterarUsuario(usuario);
+		}else {
+			cadastrarUsuario(usuario);
+		}
+	}
+	
 	public void excluirUsuario (Usuario usuario) {
 		//SQL 
 		String sql = "DELETE FROM USUARIO WHERE ID = ?";
@@ -83,7 +91,7 @@ public class UsuarioDAO {
 	
 	public ArrayList<Usuario> listarUsuario () {
 		//SQL 
-		String sql = "SELECT * FROM USUARIO";
+		String sql = "SELECT * FROM USUARIO ORDER BY ID";
 		
 		ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
 		
