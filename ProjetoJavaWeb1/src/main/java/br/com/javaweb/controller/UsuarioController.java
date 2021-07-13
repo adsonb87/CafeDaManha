@@ -37,15 +37,15 @@ public class UsuarioController extends HttpServlet {
 		
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		
+		
 		if(acao != null && acao.equals("excluir")) {
 			
 			Usuario usuario = new Usuario();
-			
 			String id = request.getParameter("id");
-				
 			usuario.setId(Integer.parseInt(id));
-			
 			usuarioDAO.excluirUsuario(usuario);
+			
+			response.sendRedirect("UsuarioController.do?acao=listar");
 			
 		}
 		
@@ -117,6 +117,8 @@ public class UsuarioController extends HttpServlet {
 		
 		PrintWriter saida = response.getWriter();
 		saida.println("Cadastrado");
+		
+		response.sendRedirect("UsuarioController.do?acao=listar");
 		
 	}
 
