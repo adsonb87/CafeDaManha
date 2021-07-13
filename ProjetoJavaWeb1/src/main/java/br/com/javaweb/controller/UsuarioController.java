@@ -33,23 +33,60 @@ public class UsuarioController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("Chamando doGet");
 		
+		String acao = request.getParameter("acao");
+		
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
-		ArrayList<Usuario> listaUsuarios = usuarioDAO.listarUsuario();
 		
-		//Chamada JSP
-		//Encapsular a lista
-		request.setAttribute("lista", listaUsuarios);
-		
-		//Encaminhar ao JSP		
-		RequestDispatcher saida = request.getRequestDispatcher("listausuarios.jsp");
-		saida.forward(request, response);
-		
-		/*
-		PrintWriter saida = response.getWriter();
+		if(acao != null && acao.equals("excluir")) {
+			
+			Usuario usuario = new Usuario();
+			
+			String id = request.getParameter("id");
 				
-		for(Usuario u : listaUsuarios) {
-			saida.println(u.getId() + " | " + u.getNome() + " | " + u.getLogin() + " | " + u.getSenha());	
-		}*/
+			usuario.setId(Integer.parseInt(id));
+			
+			usuarioDAO.excluirUsuario(usuario);
+			
+		}
+		
+		if(acao != null && acao.equals("alterar")) {
+			
+			String id = request.getParameter("id");
+			Usuario usuario = usuarioDAO.buscarPorIdUsuario(Integer.parseInt(id));
+			
+			request.setAttribute("usuario", usuario);
+			
+			RequestDispatcher saida = request.getRequestDispatcher("frmusuario.jsp");
+			saida.forward(request, response);
+			
+		} 
+		
+		
+		if(acao != null && acao.equals("cadastrar")) {
+			
+			Usuario usuario = new Usuario("", "", "");
+			usuario.setId(0);
+			
+			request.setAttribute("usuario", usuario);
+			
+			RequestDispatcher saida = request.getRequestDispatcher("frmusuario.jsp");
+			saida.forward(request, response);
+			
+		} 
+		
+		if(acao != null && acao.equals("listar")) {
+			//Obtem a lista
+			ArrayList<Usuario> listaUsuarios = usuarioDAO.listarUsuario();
+			
+			//Chamada JSP
+			//Encapsular a lista
+			request.setAttribute("lista", listaUsuarios);
+			
+			//Encaminhar ao JSP		
+			RequestDispatcher saida = request.getRequestDispatcher("listausuarios.jsp");
+			saida.forward(request, response);
+			
+		}
 		
 	}
 

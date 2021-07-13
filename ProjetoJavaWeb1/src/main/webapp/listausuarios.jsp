@@ -17,6 +17,7 @@
       <th scope="col">Nome</th>
       <th scope="col">Login</th>
       <th scope="col">Senha</th>
+      <th scope="col">Acao</th>
     </tr>
   </thead>
   
@@ -31,6 +32,9 @@
       <td><%= u.getNome() %></td>
       <td><%= u.getLogin() %></td>
       <td><%= u.getSenha() %></td>
+      <td> <a href="UsuarioController.do?acao=excluir&id=<%=u.getId()%>"> Excluir </a> 
+      	   |
+      	   <a href="UsuarioController.do?acao=alterar&id=<%=u.getId()%>"> Alterar </a> </td>
     </tr>
   </tbody>
   
