@@ -1,31 +1,29 @@
-<%@page import="br.com.javaweb.entidades.Usuario"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Cadastro EL</title>
 </head>
 <body>
-	
-		<%
-			Usuario usuario = (Usuario) request.getAttribute("usuario");
-		%>
-		
-		<form action="UsuarioController.do" method="post">
+
+<a href="index.jsp"> Menu Principal</a>
+<a href="UsuarioController.do?acao=cadastrar"> Cadastrar Usuario</a>
+<a href="UsuarioController.do?acao=listar"> Lista de Usuários</a>
+<a href="AutenticadorController.do"> Sair</a>
+
+	<form action="UsuarioController.do" method="post">
 		
 		<label> ID: </label>
-		<input type="text" readonly="readonly" name="txtid" value="<%=usuario.getId()%>" size="20"/><br/>
+		<input type="text" readonly="readonly" name="txtid" value="${requestScope.usuario.id}" size="20"/><br/>
 		
 		<label> Nome: </label>
-		<input type="text" name="txtnome" value="<%=usuario.getNome()%>" size="20"/><br/>
+		<input type="text" name="txtnome" value="${requestScope.usuario.nome}" size="20"/><br/>
 		
 		<label> Login: </label>
-		<input type="text" name="txtlogin" value="<%=usuario.getLogin()%>" size="20"/><br/>
+		<input type="text" name="txtlogin" value="${requestScope.usuario.login}" size="20"/><br/>
 				
 		<label> Senha: </label>
-		<input type="password" name="txtsenha" value="<%=usuario.getSenha()%>" size="20"/><br/>
+		<input type="password" name="txtsenha" value="${requestScope.usuario.senha}" size="20"/><br/>
 		
 		
 		<input type="submit" value="Salvar"/>

@@ -8,18 +8,19 @@
 <body>
  
  
-<form class="row row-cols-lg-auto g-3 align-items-center" >
+<form class="row row-cols-lg-auto g-3 align-items-center" action="AutenticadorController.do" method="post">
   
   <div class="col-8">
     <label class="visually-hidden" for="specificSizeInputGroupUsername">Login</label>
     <div class="input-group">
-      <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Login">
+      <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Login" name="txtlogin">
     </div>
   </div>
   <div class="col-8">
 	  <label for="inputPassword3" class="visually-hidden">Senha</label>
 	    <div class="input-group">
-	      <input type="password" class="form-control" id="specificSizeInputGroupPassword" placeholder="Senha">
+	      <input type="password" class="form-control" id="specificSizeInputGroupPassword" placeholder="Senha" 
+	      		 name="txtsenha">
 	     </div>
 	</div>
 	<div class="col-8">

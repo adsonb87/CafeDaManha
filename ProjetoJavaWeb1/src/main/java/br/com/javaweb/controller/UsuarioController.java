@@ -85,7 +85,7 @@ public class UsuarioController extends HttpServlet {
 			//Encaminhar ao JSP		
 			RequestDispatcher saida = request.getRequestDispatcher("listausuarios.jsp");
 			saida.forward(request, response);
-			
+
 		}
 		
 	}

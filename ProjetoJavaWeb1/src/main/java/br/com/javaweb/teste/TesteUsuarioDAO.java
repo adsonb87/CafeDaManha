@@ -10,7 +10,7 @@ public class TesteUsuarioDAO {
 
 	public static void main(String[] args) {
 		
-		testeExiste();
+		testeAutenticar();
 
 	}
 
@@ -87,7 +87,7 @@ public class TesteUsuarioDAO {
 	private static void testeAutenticar() {
 		
 		Usuario user = new Usuario();
-		user.setLogin("Asouza");
+		user.setLogin("tj");
 		user.setSenha("123");
 		
 		Usuario usuario = new Usuario();
